@@ -28,7 +28,7 @@ page 50203 "LABVisit Concepts List"
                 field("Unit Price"; Rec."Unit Price")
                 {
                     Caption = 'Precio unitario';
-                    ToolTip = 'Precio uinitario de la visita';
+                    ToolTip = 'Precio unitario de la visita';
                     ApplicationAreA = All;
                 }
             }

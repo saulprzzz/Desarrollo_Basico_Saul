@@ -19,31 +19,37 @@ page 50207 "LABPet List"
                 {
                     Caption = 'Número';
                     ApplicationArea = All;
+                    ToolTip = 'Número de mascota';
                 }
                 field(Name; Rec.Name)
                 {
                     Caption = 'Nombre';
                     ApplicationArea = All;
+                    ToolTip = 'Nombre de la mascota';
                 }
                 field(Age; Rec.Age)
                 {
                     Caption = 'Edad';
                     ApplicationArea = All;
+                    ToolTip = 'Edad de la mascota';
                 }
                 field(Microchip; Rec.Microchip)
                 {
                     Caption = 'Microchip';
                     ApplicationArea = All;
+                    ToolTip = 'Microchip de la mascota';
                 }
                 field("Owner Name"; Rec."Owner Name")
                 {
                     Caption = 'Nombre del propietario';
                     ApplicationArea = All;
+                    ToolTip = 'Nombre del propietario';
                 }
                 field("Owner Phone No."; Rec."Owner Phone No.")
                 {
-                    Caption = 'Número de teléfono del propietario';
+                    Caption = 'Número teléfono del propietario';
                     ApplicationArea = All;
+                    ToolTip = 'Número de teléfono del propietario';
                 }
 
 

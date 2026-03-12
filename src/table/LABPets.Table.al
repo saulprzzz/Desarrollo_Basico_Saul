@@ -84,13 +84,13 @@ table 50202 LABPets
         }
         field(12; "Preferred Veterinary"; Code[20])
         {
-            Caption = 'Veterinaria preferida';
+            Caption = 'Veterinario preferido';
             DataClassification = CustomerContent;
             TableRelation = LABVeterinary;
         }
         field(13; "Veterinary Name"; Text[100])
         {
-            Caption = 'Nombre de la veterinaria';
+            Caption = 'Nombre del veterinario';
             FieldClass = FlowField;
             CalcFormula = lookup(LABVeterinary.Name where("No." = field("Preferred Veterinary")));
             Editable = false;

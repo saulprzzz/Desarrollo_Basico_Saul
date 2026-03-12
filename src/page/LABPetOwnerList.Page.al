@@ -18,21 +18,25 @@ page 50204 "LABPet Owner List"
                 {
                     Caption = 'Número';
                     ApplicationArea = All;
+                    ToolTip = 'Número del propietario';
                 }
                 field(Name; Rec.Name)
                 {
                     Caption = 'Nombre';
                     ApplicationArea = All;
+                    ToolTip = 'Nombre del propietario';
                 }
                 field("Phone No."; Rec."Phone No.")
                 {
                     Caption = 'Número de teléfono';
                     ApplicationArea = All;
+                    ToolTip = 'Número de teléfono del propietario';
                 }
                 field("How Many Pets"; Rec."How Many Pets")
                 {
                     Caption = '¿Cuantas mascotas?';
                     ApplicationArea = All;
+                    ToolTip = '¿Cuantas mascotas vivas tiene el propietario?';
                 }
             }
         }

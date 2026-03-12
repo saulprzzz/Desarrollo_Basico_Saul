@@ -16,36 +16,43 @@ page 50208 "LABPet Card"
                 {
                     Caption = 'Número';
                     ApplicationArea = All;
+                    ToolTip = 'Número de mascota';
                 }
                 field(Name; Rec.Name)
                 {
                     Caption = 'Nombre';
                     ApplicationArea = All;
+                    ToolTip = 'Nombre de la mascota';
                 }
                 field("Date of birth"; Rec."Date of birth")
                 {
                     Caption = 'Fecha de nacimiento';
                     ApplicationArea = All;
+                    ToolTip = 'Fecha de nacimiento de la mascota';
                 }
                 field(Age; Rec.Age)
                 {
                     Caption = 'Edad';
                     ApplicationArea = All;
+                    ToolTip = 'Edad de la mascota';
                 }
                 field(Microchip; Rec.Microchip)
                 {
                     Caption = 'Microchip';
                     ApplicationArea = All;
+                    ToolTip = 'Microchip de la mascota';
                 }
                 field(Sex; Rec.Sex)
                 {
                     Caption = 'Sexo';
                     ApplicationArea = All;
+                    ToolTip = 'Sexo de la mascota';
                 }
                 field(Species; Rec.Species)
                 {
                     Caption = 'Especie';
                     ApplicationArea = All;
+                    ToolTip = 'Especie de la mascota';
                 }
                 field(Breed; Rec.Breed)
                 {
@@ -57,11 +64,14 @@ page 50208 "LABPet Card"
                 {
                     Caption = 'Veterinaria preferida';
                     ApplicationArea = All;
+                    ToolTip = 'Veterinaria preferida';
+
                 }
                 field("Veterinary Name"; Rec."Veterinary Name")
                 {
-                    Caption = 'Nombre de la veterinaria';
+                    Caption = 'Nombre del veterinario';
                     ApplicationArea = All;
+                    ToolTip = 'Nombre del veterinario de la mascota';
                 }
                 field(Deceased; Rec.Deceased)
                 {
@@ -77,6 +87,7 @@ page 50208 "LABPet Card"
                 {
                     Caption = 'Número del propietario';
                     ApplicationArea = all;
+                    ToolTip = 'Número del propietario';
 
                     trigger OnValidate()
                     begin
@@ -85,23 +96,28 @@ page 50208 "LABPet Card"
                 }
                 field("Owner Name"; Rec."Owner Name")
                 {
-                    Caption = 'Nombre propietario';
+                    Caption = 'Nombre del propietario';
                     ApplicationArea = All;
+                    ToolTip = 'Nombre del propietario de la mascota';
+
                 }
                 field("Owner address"; Rec."Owner address")
                 {
-                    Caption = 'Dirección del dueño';
+                    Caption = 'Dirección del propietario';
                     ApplicationArea = all;
+                    ToolTip = 'Dirección del propietario de la mascota';
                 }
                 field("Owner Phone No."; Rec."Owner Phone No.")
                 {
                     Caption = 'Numero de teléfono del propietario';
                     ApplicationArea = all;
+                    ToolTip = 'Numero de teléfono del propietario';
                 }
                 field("Owner E-Mail"; Rec."Owner E-Mail")
                 {
                     Caption = 'E-mail del propietario';
                     ApplicationArea = all;
+                    ToolTip = 'Correo electronico del propietario';
                 }
             }
         }
