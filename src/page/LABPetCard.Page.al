@@ -63,9 +63,9 @@ page 50208 "LABPet Card"
                 }
                 field("Preferred Veterinary"; Rec."Preferred Veterinary")
                 {
-                    Caption = 'Veterinaria preferida';
+                    Caption = 'Veterinario preferido';
                     ApplicationArea = All;
-                    ToolTip = 'Veterinaria preferida';
+                    ToolTip = 'Veterinario preferido del propietario de la mascota';
 
                 }
                 field("Veterinary Name"; Rec."Veterinary Name")

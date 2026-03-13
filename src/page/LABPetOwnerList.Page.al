@@ -5,7 +5,6 @@ page 50204 "LABPet Owner List"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = LABPetOwners;
-    Editable = false;
     CardPageId = "LABPet Owner List";
 
     layout

@@ -1,6 +1,6 @@
 page 50203 "LABVisit Concepts List"
 {
-    Caption = 'Conceptosde visita';
+    Caption = 'Conceptos de visita';
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
