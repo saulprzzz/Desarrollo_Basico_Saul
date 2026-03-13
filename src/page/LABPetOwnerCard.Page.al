@@ -51,5 +51,24 @@ page 50205 "LABPet Owner Card"
             }
         }
     }
+    actions
+    {
+        area(Processing)
+        {
+            action(Mascotas)
+            {
+                Caption = 'Mascotas';
+                ToolTip = 'Ver las mascotas del propietario';
+                Image = Customer;
+                trigger OnAction()
+                var
+                    v: REcord LABPets;
+                begin
+                    v.SetRange("Owner No.", Rec."No.");
+                    Page.Run(Page::"LABPet List", v);
+                end;
+            }
+        }
+    }
 
 }

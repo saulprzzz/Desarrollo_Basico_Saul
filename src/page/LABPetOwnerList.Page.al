@@ -46,14 +46,17 @@ page 50204 "LABPet Owner List"
     {
         area(Processing)
         {
-            action(GeneralAct)
+            action(Mascotas)
             {
-                Caption = 'General';
-                Tooltip = 'Open general information';
-                Image = Edit;
+                Caption = 'Mascotas';
+                ToolTip = 'Ver las mascotas del propietario';
+                Image = Customer;
                 trigger OnAction()
+                var
+                    v: REcord LABPets;
                 begin
-                    Message('Action executed');
+                    v.SetRange("Owner No.", Rec."No.");
+                    Page.Run(Page::"LABPet List", v);
                 end;
             }
         }

@@ -128,17 +128,19 @@ page 50208 "LABPet Card"
     {
         area(Processing)
         {
-            action(ActionName)
+            action(Visitas)
             {
-
+                Caption = 'Visitas';
+                ApplicationArea = All;
+                Image = Calendar;
                 trigger OnAction()
+                var
+                    v: Record "LABVisits Header";
                 begin
-
+                    v.SetRange("Pet No.", Rec."No.");
+                    Page.Run(Page::"LABVisit List", v);
                 end;
             }
         }
     }
-
-    var
-        myInt: Integer;
 }
