@@ -5,6 +5,7 @@ page 50208 "LABPet Card"
     ApplicationArea = All;
     UsageCategory = None;
     SourceTable = LABPets;
+    CardPageId = LABVisits;
 
     layout
     {

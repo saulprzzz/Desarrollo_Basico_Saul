@@ -3,14 +3,14 @@ page 50209 "LABVisit List"
     PageType = List;
     Caption = 'Visitas';
     ApplicationArea = All;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     SourceTable = "LABVisits Header";
 
     layout
     {
         area(Content)
         {
-            group(GroupName)
+            repeater(GroupName)
             {
                 field("No."; Rec."No.")
                 {
@@ -63,8 +63,15 @@ page 50209 "LABVisit List"
                 Promoted = true;
                 PromotedCategory = Process;
                 Image = Administration;
+
                 trigger OnAction()
+                var
+                    v: Record LABPets;
+
                 begin
+                    if v.Get(Rec."Pet No.") then
+                        Page.Run(Page::"LABPet Card", v);
+
                 end;
             }
             action(Propietario)
@@ -73,7 +80,11 @@ page 50209 "LABVisit List"
                 ApplicationArea = All;
                 Image = User;
                 trigger OnAction()
+                var
+                    v2: Record LABPetOwners;
                 begin
+                    if v2.Get(Rec."Pet Owner") then
+                        Page.Run(Page::"LABPet Owner Card", v2);
                 end;
             }
         }

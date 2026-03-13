@@ -2,6 +2,7 @@ table 50204 "LABVisits Header"
 {
     DataClassification = CustomerContent;
     Caption = 'Cabecera de visitas';
+    DataCaptionFields = "No.", "Pet Name";
 
     fields
     {
