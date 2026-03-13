@@ -132,6 +132,7 @@ page 50208 "LABPet Card"
             {
                 Caption = 'Visitas';
                 ApplicationArea = All;
+                ToolTip = 'Visitas';
                 Image = Calendar;
                 trigger OnAction()
                 var

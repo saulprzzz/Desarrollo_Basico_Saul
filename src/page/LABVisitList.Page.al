@@ -61,6 +61,7 @@ page 50209 "LABVisit List"
                 Caption = 'Mascota';
                 ApplicationArea = All;
                 Promoted = true;
+                ToolTip = 'Información de la mascota';
                 PromotedCategory = Process;
                 Image = Administration;
 
@@ -78,6 +79,7 @@ page 50209 "LABVisit List"
             {
                 Caption = 'Propietario';
                 ApplicationArea = All;
+                ToolTip = 'Información del propietario de la mascota';
                 Image = User;
                 trigger OnAction()
                 var

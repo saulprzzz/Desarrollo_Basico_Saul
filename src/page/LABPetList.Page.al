@@ -64,6 +64,7 @@ page 50207 "LABPet List"
             action(Visitas)
             {
                 Caption = 'Visitas';
+                ToolTip = 'Visitas de la mascota';
                 ApplicationArea = All;
                 Image = Calendar;
                 trigger OnAction()
@@ -76,7 +77,4 @@ page 50207 "LABPet List"
             }
         }
     }
-
-    var
-        myInt: Integer;
 }
